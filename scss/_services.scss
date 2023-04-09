@@ -100,6 +100,39 @@
             transform: rotate(0deg);
         }
     }
+
+
+    .active__condition {
+        background: #5CCD6A;
+        color: #fff;
+        position: relative;
+        &::before{
+            content: '';
+            width: 33px;
+            height: 33px;
+            background: url(../icons/services/air-conditioningActive.svg)no-repeat;
+            top: 17px;
+            left: 190px;
+            position: absolute;
+            transform: rotate(90deg);
+        }
+    }
+
+    .non-active__ventilation{
+        background: #fff;
+        color: #7CA281;
+        position: relative;
+        &::before{
+            content: '';
+            width: 33px;
+            height: 33px;
+            background: url(../icons/services/GroupNonActive.svg) no-repeat;
+            top: 17px;
+            left: 190px;
+            position: absolute;
+            transform: rotate(90deg);
+        }
+    }
     .non-active{
         background: #fff;
         color: #7CA281;
@@ -340,13 +373,12 @@
 
 .hide{
     animation-name: tabsHide;
-    animation-duration: 0.3s;
+    animation-duration: 0.5s;
     margin-left: 100%;
 }
 .show{
-    // display: block;
     animation-name: tabsShow;
-    animation-duration: 0.3s;
+    animation-duration: 0.5s;
     margin-left: 0;
 }
 
@@ -367,8 +399,5 @@
     
       to {
         margin-left: 0%;
-
-       
-        
       }
 }

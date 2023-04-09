@@ -11,6 +11,14 @@ window.addEventListener('DOMContentLoaded', function(){
         for(let i = hide; i < tabs.length; i++){
             tabs[i].classList.remove('show');
             tabs[i].classList.add('hide');
+            btn[i].classList.remove('active');
+            if(btn[i].innerHTML == 'Система Вентиляции'){
+                btn[i].classList.add('non-active__ventilation');
+            }if(btn[i].innerHTML == 'Кондиционирование'){
+                btn[i].classList.remove('active__condition');
+                btn[i].classList.add('non-active');
+            }
+           
         }}
     
         hideTabContent(1);
@@ -20,6 +28,14 @@ window.addEventListener('DOMContentLoaded', function(){
         if(tabs[show].classList.contains('hide')){
             tabs[show].classList.remove('hide');
             tabs[show].classList.add('show');
+            btn[show].classList.remove('non-active');
+            if(btn[show].innerHTML == 'Система Вентиляции'){
+                btn[show].classList.remove('non-active__ventilation');
+                btn[show].classList.add('active');
+            }if(btn[show].innerHTML == 'Кондиционирование'){
+                btn[show].classList.remove('non-active');
+                btn[show].classList.add('active__condition');
+            }
         }}
     
     
@@ -35,5 +51,4 @@ window.addEventListener('DOMContentLoaded', function(){
                 }
             }
         })
-        console.log(target)
     });
