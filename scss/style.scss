@@ -1,6 +1,7 @@
 @import "reset.scss";
 @import "promo.scss";
 @import "services.scss";
+@import "underKey.scss";
 
 
 // font-family: 'Kanit', sans-serif; |Ruberoid
@@ -8,4 +9,12 @@
 
 *{
     font-size: 16px;
+}
+
+.title{
+    color:#495E4C;
+    font-size: 2.8em;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
 }

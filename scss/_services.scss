@@ -98,6 +98,7 @@
             left: 190px;
             position: absolute;
             transform: rotate(0deg);
+            transition: .4s all ease;
         }
     }
 
@@ -115,6 +116,7 @@
             left: 190px;
             position: absolute;
             transform: rotate(90deg);
+            transition: .4s all ease;
         }
     }
 
@@ -131,6 +133,7 @@
             left: 190px;
             position: absolute;
             transform: rotate(90deg);
+            transition: .4s all ease;
         }
     }
     .non-active{
@@ -146,6 +149,7 @@
             left: 190px;
             position: absolute;
             transform: rotate(90deg);
+            transition: .4s all ease;
         }
     }
     .tabs-content{
