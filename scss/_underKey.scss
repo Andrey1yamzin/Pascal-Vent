@@ -23,13 +23,13 @@
 } 
 
 .under-key__galery{
-    min-height: 800px;
+    height: auto;
     position: relative;
     .under-key__background-lung{
             position: absolute;
             top: -50px;
             left:-230px;
-            z-index: 9;
+            z-index: 1;
 		}
         .under-key__background-group-leaves1{
             position: absolute;
@@ -54,11 +54,64 @@
 }
 .galary{
     width: 100%;
-    z-index: 2;
+    
 }
 .galary-items{
     padding:85px 135px 0 135px;
     display: flex;
     flex-wrap: wrap;
+    padding: 85px 100px 0 100px;
+    justify-content: space-around;
+}
+
+.galary-item {
+    position: relative;
+    z-index: 9;
+    width: 257px;
+    height: 135px;
+    margin: 25px 0;
     
+    
+    &__image {
+    overflow: hidden;
+    position: relative;
+    width: 257px;
+    height: 135px;
+    background: url(../image/under-key__galery/galary/1.png)top /cover no-repeat;
+    background-clip:padding-box;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    
+    }
+
+    &__price {
+        position: absolute;
+        top: 19px;
+        left: 0px;
+        background: #D9FADD;
+        padding: 5px 15px 5px 15px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+        font-family: 'Roboto', sans-serif;
+        color: #495D4C;
+        font-weight: 600;
+    }
+
+    &__description {
+        padding: 10px 0 10px 15px;
+        font-family: 'Kanit', sans-serif;
+        color: #78C081;
+        font-weight: 500;
+        background: #fff;
+        width: 257px;
+        height: 43px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        position: absolute;
+        bottom: -10px;
+        
+    }
 }
