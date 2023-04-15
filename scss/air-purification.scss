@@ -3,10 +3,151 @@
     max-width:1440px;
     margin: 0 auto;
 }
+.air-purification__info{
+    padding: 100px 135px 0 135px;
+    display: flex;
+}
 .air-purification__title{
-    width: 516px;
+    position: relative;
+    width: 100%;
     span{
         font-size: 1em;
         font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        &::before{
+            content: '';
+            top: 35px;
+            right: 150px;
+            width:100px;
+            height: 3px;
+            background:#78C081;
+            position: absolute;
+        }
     }
+}
+.air-purification {
+    &__text{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    &__title {
+        color: #78C081;
+        font-family: 'Kanit', sans-serif;
+        font-weight: 500;
+        font-size: 1.6em;
+        text-transform: capitalize;
+    
+    }
+
+    &__profit {
+        margin: 15px 0 0;
+        
+        &-item{
+            color: #7CA381;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            position: relative;
+            &::after{
+                content: "";
+                width: 17px;
+                height: 17px;
+                background: url(../icons/air-purification/Cooling.svg);
+                top: 2px;
+                left: -25px;
+                position: absolute;
+            }
+        }
+    }
+}
+
+.air-purification__icons{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    padding:0 160px 0 160px ;
+    
+}
+.icon-background{
+    width: 100px;
+    height: 100px;
+    background: #D9FADD;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 84px 0 0 0;
+    position: relative;
+    span{
+        display: inline-block;
+        color: #495E4C;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 1.4em;
+        position: absolute;
+        width: 200px;
+        left: 10px;
+        top: 130px;
+    }
+}
+
+.icon__wish{
+    position: relative;
+    &::before{
+        content: "";
+        background: url(../icons/air-purification/Vector1.svg)50% 50%/contain no-repeat;
+        position: absolute;
+        top: 15px;
+        right: 108px;
+        width: 270px;
+        height: 50px;
+    }
+    &::after{
+        content: "";
+        background: url(../icons/air-purification/Vector2.svg)50% 50%/contain no-repeat;
+        position: absolute;
+        top: 15px;
+        left: 100px;
+        width: 270px;
+        height: 50px;
+    }
+    span{
+        left: -30px;
+    }
+}
+
+.icon__application{}
+
+.icon__implementation{
+    position: relative;
+    &::before{
+        content: "";
+        background: url(../icons/air-purification/Vector3.svg)50% 50%/contain no-repeat;
+        position: absolute;
+        top: 50px;
+        right: 102px;
+        width: 270px;
+        height: 50px;
+    }
+    &::after{
+        content: "";
+        background: url(../icons/air-purification/Vector4.svg)50% 50%/contain no-repeat;
+        position: absolute;
+        top: -20px;
+        left: 75px;
+        width: 270px;
+        height: 50px;
+    }
+    span{
+        left: -5px;
+    }
+}
+
+.air-purification-wrapper-form{
+    width: 100%;
+    height: 248px;
+    background: #D9FADD;
+    margin: 50px 0 0 0;
 }
