@@ -1,0 +1,112 @@
+.aboutus {
+
+    &__body {
+        max-width:1440px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &__info {
+        padding: 100px 135px 0;
+    }
+    &__peculiarities-dec{
+        position: absolute;
+        top: 0;
+        left: -135px;
+    }
+}
+.aboutus-wrapper {
+    display: flex;
+}
+.aboutus-peculiarities-wrapper {
+    width: 100%;
+    .aboutus-peculiarities-card{
+        width: 530px;
+        height: 580px;
+        background: #fff;
+        border-radius: 50px;
+        box-shadow: 0px 0px 100px rgba(73, 93, 76, 0.1);
+        position: relative;
+    }
+    .aboutus-peculiarities__title{
+        padding:30px 30px;
+        span{
+            color: #78C081;
+            font-weight: 200;
+            text-transform: uppercase;
+            font-size: 21px;
+            position: relative;
+            top: -10px;
+            left: 5px;
+            padding: 0 0 2px 0;
+            border-bottom:1px solid #78C081;
+            display: inline-block;
+        }
+    }
+    .aboutus-peculiarities__text{
+        padding: 0px 30px 30px 50px;
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            color: #848484;
+            padding-top: 15px;
+            span{
+                font-weight: 500;  
+            }
+        }
+    }
+    
+}
+
+.aboutus-experience-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    .aboutus-experience__item{
+        width: 215px;
+        height: auto;
+        margin: auto;
+        position: relative;
+        .dec-bg{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 40px;
+            left: 80px;
+            border-radius: 50%;
+            background: rgba(186, 255, 195, 0.250);
+            z-index: 1;
+            -webkit-box-shadow: 0px 0px 14px 32px rgba(186, 255, 195, 0.250);
+            -moz-box-shadow: 0px 0px 14px 32px rgba(186, 255, 195, 0.250);
+            box-shadow: 0px 0px 50px 42px rgba(186, 255, 195, 0.250);
+
+        }
+        &-title{
+            color: #78C081;
+            font-family: 'Kanit', sans-serif;
+            font-weight: 500;
+            font-size: 1.6em;
+            position: relative;
+            z-index: 2;
+            span{
+                font-size: 1.4em;
+            }
+        }
+        &-subtitle{
+            font-family: 'Roboto', sans-serif;
+            color: #7CA381;
+            font-weight: 300;
+            font-size: 1em;
+            text-align: center;
+            padding-top: 15px;
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
+
+
+
+
+.aboutus-experience-wrapper {
+    width: 100%;
+}

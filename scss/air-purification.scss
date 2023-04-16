@@ -151,7 +151,7 @@
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
     padding: 55px 0 33px 135px;
-    position: absolute;
+    position: relative;
     z-index: 4;
 }
 .air-purification-wrapper-form{
@@ -161,8 +161,8 @@
     margin: 50px 0 0 0;
 }
 .air-purification-form-wrapper{
-    padding: 133px 0 0 135px;
-    position: absolute;
+    padding: 0 0 0 135px;
+    position: relative;
     z-index: 3;
 }
 .air-purification__form{
