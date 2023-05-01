@@ -5,6 +5,39 @@
         margin: 0 auto;
         position: relative;
     }
+    &-library {
+        width: 100%;
+        img{
+            position: absolute;
+            top: -100px;
+            right:-500px;
+            z-index: 1;
+        }
+        &__container{
+            position: relative;
+            z-index: 3;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            grid-auto-rows: minmax(350px, 430px);
+            align-items: end;
+        }
+        &__item{
+            
+            img{
+                position: static;
+                border-radius: 40px;
+            }
+        }
+        .item__2{
+            align-self: start;
+            padding-top: 140px;
+        }
+        .item__4{
+            align-self: start;
+            padding-top: 80px;
+        }
+    }
 }
 .application-content{
     padding: 100px 135px 0 135px;
@@ -104,12 +137,5 @@
         }
     }
 
-    &__library {
-        width: 100%;
-        img{
-            position: absolute;
-            top: -100px;
-            right:-500px;
-        }
-    }
+    
 }
