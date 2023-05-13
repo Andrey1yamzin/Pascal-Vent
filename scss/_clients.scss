@@ -1,0 +1,63 @@
+.clients{
+    overflow: hidden;
+    background: #D9FADD;
+    position: relative;
+    &_body {
+        max-width:1440px;
+        margin: 0 auto;
+    }
+    &-content{
+    padding: 150px 135px 100px 135px;
+    display: flex;
+    }
+    &_info {
+        width: 100%;
+        
+    }
+
+    &_title {
+        line-height: 60px;
+        position: relative;
+            &::after{
+                content: "";
+                top: 30px;
+                right: 15px;
+                width: 100px;
+                height: 3px;
+                background: #78c081;
+                position: absolute;
+    }
+    }
+
+    &_text {
+        font-family: 'Roboto', sans-serif;
+        color: #848484;
+        max-width: 640px;
+        margin-top: 25px;
+        
+    }
+
+    &_slider {
+        width: 100%;
+    }
+}
+
+.custom-shape-divider-top-1683960565 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1683960565 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 107px;
+}
+
+.custom-shape-divider-top-1683960565 .shape-fill {
+    fill: #FFFFFF;
+}

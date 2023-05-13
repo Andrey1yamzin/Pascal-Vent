@@ -1,0 +1,38 @@
+
+.portfolio {
+    overflow: hidden;
+   
+
+    &_body {
+        max-width:1440px;
+        margin: 0 auto;
+    }
+}
+.portfolio-content {
+    padding: 100px 135px 0 135px;
+    display: flex;
+    height: 500px;
+}
+
+
+.portfolio__info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio_title{
+    width: 400px;
+    height: 130px;
+    line-height: 60px;
+    
+}
+.portfolio_text{
+    font-family: 'Roboto', sans-serif;
+    color: #848484;
+    max-width: 640px;
+
+}
+
+
+
+
