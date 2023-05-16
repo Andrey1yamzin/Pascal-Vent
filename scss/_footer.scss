@@ -3,13 +3,19 @@ background: url(../image/footer/20356.png) 100% 100%/cover no-repeat;
 height: 528px;
 width: 100%;
     &_body {
+
+        max-width:1440px;
+        margin: 0 auto;
     }
 
     &_content {
+        padding: 0px 135px 0px 135px;
+        display: flex;
+        
+        
     }
 }
 .footer_content {
-
     &__item {
     }
 }
@@ -17,7 +23,7 @@ width: 100%;
 .footer__info{
     width: 406px;
     height: auto;
-    padding: 30px 30px;
+    padding: 80px 0 0 0;
     .footer__logo{
         
         img{
@@ -29,7 +35,7 @@ width: 100%;
         font-family: 'Roboto', sans-serif;
         font-size: 0.9em;
         display: block;
-        padding: 0 0 30px 0;
+        padding: 30px 0 30px 0;
     }
     .footer__subtext{
         padding: 30px 0 0 0;
@@ -40,7 +46,7 @@ width: 100%;
         position: relative;
         &::after{
             content: "";
-            width: 100%;
+            width: 95%;
             height: 2px;
             background: #78C081;
             position: absolute;
@@ -51,5 +57,122 @@ width: 100%;
             color: #78C081;
             font-size: 1.1em;
         }
+    }
+}
+
+.footer {
+
+    &__contacts {
+        padding: 100px 0 0 0;
+        margin-left: 120px;
+        width: 250px;
+    }
+}
+.footer_content {
+    font-family: 'Roboto', sans-serif;
+    color: #7B897D;
+    font-size: 1em;
+    &__title {
+        font-family: 'Kanit', sans-serif;
+        font-size: 1.6em;
+        color: #495E4C;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+
+    &__number {
+        padding: 15px 0 15px 50px;
+        position: relative;
+        &::before{
+            content: "";
+            width:32px;
+            height: 32px;
+            background: url(../icons/footer/telephone.png)50% 50%/contain no-repeat;
+            position: absolute;
+            top: 10px;
+            left: 0px;
+        }
+        border-bottom: 2px solid #BEE1C2;
+    }
+
+    &__email {
+        padding: 15px 0 15px 50px;
+        position: relative;
+        &::before{
+            content: "";
+            width:32px;
+            height: 32px;
+            background: url(../icons/footer/envelope.svg)50% 50%/contain no-repeat;
+            position: absolute;
+            top: 10px;
+            left: 0px;
+        }
+        border-bottom: 2px solid #BEE1C2;
+    }
+
+    &__hours {
+        padding: 20px 0 15px 50px;
+        position: relative;
+        &::before{
+            content: "";
+            width:32px;
+            height: 32px;
+            background: url(../icons/footer/calendar.svg)50% 50%/contain no-repeat;
+            position: absolute;
+            top: 10px;
+            left: 0px;
+        }
+    }
+
+    &__location {
+        padding: 15px 0 15px 50px;
+        position: relative;
+        &::before{
+            content: "";
+            width:32px;
+            height: 32px;
+            background: url(../icons/footer/pin.png)50% 50%/contain no-repeat;
+            position: absolute;
+            top: 10px;
+            left: 0px;
+        }
+
+    }
+}
+
+
+
+.footer {
+
+    &__form-wrapper {
+        padding: 100px 0 0 100px;
+    }
+
+    &__form-title {
+        font-family: 'Kanit', sans-serif;
+        font-size: 1.6em;
+        color:#495E4C;
+        font-weight: 500;
+    }
+}
+.footer-form {
+
+    &_element {
+    }
+}
+.input-text {
+}
+.input {
+
+    &_name {
+        margin-top: 25px;
+    }
+
+    &_number {
+        margin-top: 20px;
+    }
+
+    &_button {
+        margin-top: 35px;
     }
 }
