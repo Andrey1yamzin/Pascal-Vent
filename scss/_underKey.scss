@@ -4,7 +4,7 @@
     // border: 1px solid black;
 }
 .under-key__title{
-    width: 867px;
+    width: 900px;
     height: 120px;
     margin-left: 135px;
     margin-top: 170px;
@@ -13,12 +13,12 @@
     position: relative;
     &::after{
         content:"";
-        width:226px;
+        width:200px;
         height: 3px;
         background: #78C081;
         position: absolute;
         bottom: 14px;
-        right: 130px;
+        right: 140px;
     }
 } 
 

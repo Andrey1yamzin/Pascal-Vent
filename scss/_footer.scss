@@ -11,7 +11,10 @@ width: 100%;
     &_content {
         padding: 0px 135px 0px 135px;
         display: flex;
-        
+        font-family: 'Roboto', sans-serif;
+        color: #7B897D;
+        font-size: 1em;
+        flex-wrap:wrap;
         
     }
 }
@@ -64,14 +67,12 @@ width: 100%;
 
     &__contacts {
         padding: 100px 0 0 0;
-        margin-left: 120px;
+        margin-left: 90px;
         width: 250px;
     }
 }
 .footer_content {
-    font-family: 'Roboto', sans-serif;
-    color: #7B897D;
-    font-size: 1em;
+    
     &__title {
         font-family: 'Kanit', sans-serif;
         font-size: 1.6em;
@@ -145,7 +146,8 @@ width: 100%;
 .footer {
 
     &__form-wrapper {
-        padding: 100px 0 0 100px;
+        padding: 100px 0 0 90px;
+        
     }
 
     &__form-title {
@@ -156,8 +158,11 @@ width: 100%;
     }
 }
 .footer-form {
+    
 
     &_element {
+        display: flex;
+        flex-direction: column;
     }
 }
 .input-text {
