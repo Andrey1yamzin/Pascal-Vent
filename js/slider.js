@@ -2,12 +2,12 @@
     let position = 0;
     const slidesToShow = 1;
     const slidesToScroll = 1;
-    const container = document.querySelector('.slider-container');
-    const track = document.querySelector('.slider-track');
-    const items = document.querySelectorAll('.slider-item');
+    const container = document.querySelector('.portfolio-content');
+    const track = document.querySelector('.slider-portfolio-items');
+    const items = document.querySelectorAll('.slider-portfolio__item-body');
     const itemsCount = items.length;
-    const nextButton = document.querySelector('.slider-next');
-    const prevButton = document.querySelector('.slider-prev');
+    const nextButton = document.querySelector('.slider-portfolio__next');
+    const prevButton = document.querySelector('.slider-portfolio__prev');
     const widthFocusItem = 500;
     //ширина каждого элемента
     const itemWidth = 270 / slidesToShow;
@@ -21,7 +21,8 @@
         item.style.minWidth = `${itemWidth}px`;
         
     });
-    addStyle(getItemFocus(itemFocus))
+    checkBtns();
+    addStyle(getItemFocus(itemFocus));
     
     nextButton.addEventListener('click', () => {
         const itemsLeft = itemsCount -(Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
@@ -57,12 +58,28 @@
         // смещение трека
         track.style.transform = `translateX(${position}px)`;
     };
-    
-    const checkBtns = () =>{
+    function checkBtns(){
         prevButton.disabled = position === 0;
         nextButton.disabled = position <= -(itemsCount - slidesToShow) * itemWidth;
+
+        if(prevButton.disabled === true){
+            prevButton.classList.add('nonactive');
+            prevButton.classList.remove('active');
+        }
+        if(nextButton.disabled === true){
+            nextButton.classList.add('nonactive');
+            nextButton.classList.remove('active');
+        }
+        if(prevButton.disabled === false){
+            prevButton.classList.add('active');
+            prevButton.classList.remove('nonactive');
+        }
+        if(nextButton.disabled === false){
+            nextButton.classList.add('active');
+            nextButton.classList.remove('nonactive');
+        }
         setTimeout(checkBtns, 1000);
-    };
+    }
     
     function getItemFocus(item){
         for(let i = 0; i < itemsCount; i++){
@@ -72,8 +89,11 @@
         }
     }
         function addStyle(item){
-           item.style.minWidth = `${widthFocusItem}px`
+
+        item.classList.add('active-item');
         }
         function removeStyle(item){
-            item.style.minWidth = `${itemWidth}px`;
+
+            item.classList.remove('active-item');
+
         }

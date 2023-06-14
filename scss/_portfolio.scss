@@ -1,42 +1,48 @@
 
 .portfolio {
     overflow: hidden;
-    background: #797979;
-   
-
+    position: relative;
+    height: 900px;
+    
     &_body {
         max-width:1440px;
         margin: 0 auto;
     }
 }
-// .portfolio-content {
-//     padding: 100px 135px 0 135px;
-//     display: flex;
-//     height: 500px;
-// }
-
-
-// .portfolio__info{
-//     width: 100%;
-//     display: flex;
-//     justify-content: space-between;
-// }
-// .portfolio_title{
-//     width: 400px;
-//     height: 130px;
-//     line-height: 60px;
+.portfolio-content {
+    padding: 100px 135px 0 135px;
+    height: 500px;
     
-// }
-// .portfolio_text{
-//     font-family: 'Roboto', sans-serif;
-//     color: #848484;
-//     max-width: 640px;
-
-// }
+}
 
 
+.portfolio__info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.portfolio_title{
+    width: 400px;
+    height: 130px;
+    line-height: 60px;
+    z-index: 2;
+    
+}
+.portfolio_text{
+    font-family: 'Roboto', sans-serif;
+    color: #848484;
+    max-width: 640px;
+
+}
 
 
+
+.slider-portfolio-wrapper{
+    position: absolute;
+    top: 0;
+    margin-top: 366px;
+}
 .slider-portfolio-items{
     display: flex;
     flex:1 1 auto;
@@ -128,16 +134,19 @@
 .slider-portfolio-body {
 }
 .slider-portfolio-buttons {
-    padding: 10px;
+    
+    margin-top: 46px;
     margin-bottom: 25px;
     .slider-portfolio-buttons__items{
         display: flex;
-        column-gap:25px;
+        column-gap:37px;
+        
     .slider-portfolio__prev{
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
+        // z-index: 4;
         span{
             display: inline-block;
             height: 3px;
@@ -162,6 +171,7 @@
         align-items: center;
         position: relative;
         transform: rotate(-180deg);
+        // z-index: 4;
         span{
             display: inline-block;
             height: 3px;
@@ -224,20 +234,34 @@
 
 
 .slider-portfolio-items {
+    transition: .4s all ease-in;
 }
 .swiper-slide-active{
     width: 500px;
     .slider-portfolio__item_subtitle{
      opacity: 1;
-     transition: 1.8s ease-in;
+     transition: 1s ease-in;
     }
 }
 
 
 .active-item{
   width: 500px;
+  transition: .4s all ease-in;
   .slider-portfolio__item_subtitle{
    opacity: 1;
-   transition: 1.8s ease-in;
+   transition: 1s ease-in;
   }
 } 
+
+
+.portfolio-background{
+    position: absolute;
+    top: 0;
+    left: -135px;
+    // z-index: 2;
+    img{
+        max-width: 100%;
+        display: block;
+    } 
+}

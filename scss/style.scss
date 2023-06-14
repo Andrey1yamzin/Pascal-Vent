@@ -1,80 +1,80 @@
 
-.wrapper{
-    width: 100%;
-    margin: 0 auto;
+// .wrapper{
+//     width: 100%;
+//     margin: 0 auto;
     
-}
-
-.wrapper {
-}
-.slider-container {
-    overflow: hidden;
-    // background-color: pink;
-    padding-left:135px;
-}
-.slider-track {
-    // background-color: yellow;
-    transition: .5s all ease-in;
-    display: flex;
-    column-gap:30px;
-}
-.slider-item {
-    height: 456px;
-    min-width: 270px;
-    transition: .4s all ease-in;
-
-}
-.slider-item:nth-child(3n+1){
-    background-color: red;
-}
-.slider-item:nth-child(3n+2){
-    background-color: green;
-}
-.slider-item:nth-child(3n+3){
-    background-color: blue;
-}
-
-.sider-buttons {
-    text-align: center;
-    margin:10px;
-}
-.slider-prev {
-    display: inline-block;
-    background-color: grey;
-    cursor: pointer;
-    padding: 5px;
-}
-.slider-next {
-    display: inline-block;
-    background-color: grey;
-    cursor: pointer;
-    padding: 5px;
-}
-
-
-// @import "reset.scss";
-// @import "promo.scss";
-// @import "services.scss";
-// @import "underKey.scss";
-// @import "air-purification.scss";
-// @import "aboutUs.scss";
-// @import "application.scss";
-// @import "scheme-work.scss";
-// @import "portfolio.scss";
-// @import "clients.scss";
-// @import "footer.scss";
-
-// // font-family: 'Kanit', sans-serif; |Ruberoid
-// // font-family: 'Roboto', sans-serif; |Proxima Nova
-
-// *{
-//     font-size: 16px;
 // }
 
-// .title{
-//     color:#495E4C;
-//     font-size: 2.8em;
-//     font-family: 'Kanit', sans-serif;
-//     font-weight: 600;
-//     text-transform: capitalize;
+// .wrapper {
 // }
+// .slider-container {
+//     overflow: hidden;
+//     // background-color: pink;
+//     padding-left:135px;
+// }
+// .slider-track {
+//     // background-color: yellow;
+//     transition: .5s all ease-in;
+//     display: flex;
+//     column-gap:30px;
+// }
+// .slider-item {
+//     height: 456px;
+//     min-width: 270px;
+//     transition: .4s all ease-in;
+
+// }
+// .slider-item:nth-child(3n+1){
+//     background-color: red;
+// }
+// .slider-item:nth-child(3n+2){
+//     background-color: green;
+// }
+// .slider-item:nth-child(3n+3){
+//     background-color: blue;
+// }
+
+// .sider-buttons {
+//     text-align: center;
+//     margin:10px;
+// }
+// .slider-prev {
+//     display: inline-block;
+//     background-color: grey;
+//     cursor: pointer;
+//     padding: 5px;
+// }
+// .slider-next {
+//     display: inline-block;
+//     background-color: grey;
+//     cursor: pointer;
+//     padding: 5px;
+// }
+
+
+@import "reset.scss";
+@import "promo.scss";
+@import "services.scss";
+@import "underKey.scss";
+@import "air-purification.scss";
+@import "aboutUs.scss";
+@import "application.scss";
+@import "scheme-work.scss";
+@import "portfolio.scss";
+@import "clients.scss";
+@import "footer.scss";
+
+// font-family: 'Kanit', sans-serif; |Ruberoid
+// font-family: 'Roboto', sans-serif; |Proxima Nova
+
+*{
+    font-size: 16px;
+}
+
+.title{
+    color:#495E4C;
+    font-size: 2.8em;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
