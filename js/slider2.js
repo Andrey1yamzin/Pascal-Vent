@@ -80,20 +80,3 @@
         }
         setTimeout(checkBtns2, 1000);
     }
-    
-    function getItemFocus2(item2){
-        for(let i = 0; i < itemsCount2; i++){
-            if(item2 == i){
-                return items2[i]
-            }
-        }
-    }
-        function addStyle2(item2){
-
-        item2.classList.add('active-item');
-        }
-        function removeStyle2(item2){
-
-            item2.classList.remove('active-item');
-
-        }
