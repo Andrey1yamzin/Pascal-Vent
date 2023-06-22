@@ -2,6 +2,7 @@
     overflow: hidden;
     background: #D9FADD;
     position: relative;
+    
     &_body {
         max-width:1440px;
         margin: 0 auto;
@@ -12,6 +13,7 @@
     }
     &_info {
         width: 100%;
+        
         
     }
 
@@ -42,7 +44,7 @@
     }
 }
     .cleints-sleder_item{
-        max-width: 258px;
+        max-width: 300px;
         height: 115px;
         background: #fff;
         border-radius: 30px;
@@ -52,7 +54,7 @@
         position: relative;
         top: 0;
         right: 0;
-        margin: 0 10px 0 10px;
+        // margin: 0 10px 0 10px;
     }
 
 .custom-shape-divider-top-1683960565 {
@@ -78,19 +80,20 @@
 
 .clients--slider-wrapper{
     position:absolute;
-    width: 800px;
+    width: 900px;
     top: 200px;
     right: 0px;
     overflow: hidden;
     .clients--slider-content{
-
+        width: 900px;
        
     }
     .clients--slider-items{
         display: flex;
+        column-gap:30px;
     }
     .cleints-sleder_item{
-        padding: 10px;
+        
     }
 }
 .clients--slider-buttons {
