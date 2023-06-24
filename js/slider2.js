@@ -16,9 +16,7 @@
 
 
     itemsSlidesClients.forEach((item2)=>{
-        // задаём ширину каждому элементу в css
         item2.style.minWidth = `${itemWidthSlidesClients}px`;
-        
     });
 
 
@@ -27,8 +25,6 @@
     nextButtonSlidesClients .addEventListener('click', () => {
         const itemsLeft = itemsCountSlidesClients -(Math.abs(position2) + slidesClientsToShow * itemWidthSlidesClients) / itemWidthSlidesClients;
         position2 -= itemsLeft >= slidesClientsToScroll ? movePositionSlidesClients : itemsLeft * itemWidthSlidesClients;
-       
-       
 
         setPosition2();
         checkBtns2();
@@ -44,10 +40,6 @@
         
     });
     
-
-
-
-
     
     const setPosition2 = () =>{
         // смещение трека

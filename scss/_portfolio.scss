@@ -200,6 +200,7 @@
         transition: .1s ease all;
     }
     .nonactive{
+        cursor: default;
         span{
             background: #D9FADD;
         }
