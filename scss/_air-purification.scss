@@ -150,7 +150,7 @@
     font-size: 2.1em;
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
-    padding: 55px 0 33px 135px;
+    padding: 55px 0 10px 135px;
     position: relative;
     z-index: 4;
 }
@@ -167,6 +167,9 @@
 }
 .air-purification__form{
     display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: row;
     
 }
 .input-text{

@@ -1,16 +1,8 @@
-body{
-    background: rgb(40,14,186);
-    background: linear-gradient(35deg, rgba(40,14,186,1) 0%, rgba(70,194,203,1) 49%, rgba(203,31,187,1) 100%);
-    padding: 0;
-    margin: 0;
-    position: relative;
-}
-
 .window--application{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: #d9fadd9d;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
     position: absolute;
     top: 0;
     
@@ -22,11 +14,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px;
+    
 }
 
 .window--application-body{
-  max-width: 412px;
-  height: auto;
   position: relative;
     .window--application-card{
         width: 412px;
@@ -35,13 +27,15 @@ body{
         border-radius: 50px;
         display: flex;
         flex-direction: column;
+        box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
         .window--application-title{
             align-self: center;
             padding-top:35px;
             margin-bottom: 20px;
           
             .window--application-title__text{
-                width: 304px;
+                padding: 0 40px 0 40px;
+                margin: 0 10px 0 10px;
                 font-size:40px;
                 font-weight: 600;
                 position: relative;
@@ -51,8 +45,8 @@ body{
                     height: 2px;
                     background:#78C081;
                     position: absolute;
-                    top: 93px;
-                    right: 26px;
+                    top: 92px;
+                    left: 196px;
     
                 }
             }
@@ -66,25 +60,25 @@ body{
             .window--application__form{
                 display: flex;
                 flex-direction: column;
-                padding-left: 35px;
+                padding: 0 30px 0 30px;
                 // align-items: center;
                 .input-text{
-                    width: 342px;
+                    width: 100%;
                     height: 49px;
                     box-shadow: 0px 0px 3px 0px rgba(92, 205, 105, 0.493);
                 }
                 .input_button{
-                    width: 342px;
+                    width: 100%;
                     
                     &::after{                 
-                        width: 342px;
+                        width: 100%;
                     }
                     }
             }
         }
         .window--application-logo{
             align-self: center;
-            margin-top: 15px;
+            margin: 15px 0 15px 0;
 
         }
     }
@@ -121,4 +115,44 @@ body{
         
     }
 }
+
+
+
+.hideWindowForm{
+    display: none;
+}
+.showWindowForm{
+    display: block;
+    z-index: 7;
+}
+
+@media (max-width: 480px){
+    .window--application-body{
+        .window--application-card{
+            width: 100%;
+            height: auto;
+            .window--application-title{
+                .window--application-title__text  {
+                    padding: 0 10px 0 10px;
+                    margin: 0;
+                    font-size: calc(24px + 10 * (50vw / 1920));
+                    &::after{
+                        display: none;
+        
+                    }
+                }
+            }
+        }
+        
+    }
+    .window--application-wrapper{
+        justify-content: space-evenly;
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    
+}
+
+
 

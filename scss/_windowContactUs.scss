@@ -1,0 +1,137 @@
+.window-contentUs{
+    width: 100%;
+    height: 100vh;
+    z-index: 8;
+    background: #d9fadd9d;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+.window-contentUs-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.window-contentUs-card{
+    width: 445px;
+    height: auto;
+    background: #D9FADD;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    position: relative;
+}
+.window-contentUs-title{
+        padding: 35px 35px 20px 35px;
+    .window-contentUs-title-text{
+        font-size: calc(33px + 16 * (100% / 1920));
+        position: relative;
+        &::after{
+            content: "";
+            width: 120px;
+            height: 2px;
+            background:#78C081;
+            position: absolute;
+            top: 75px;
+            left: 106px;
+    
+        }
+    } 
+    
+}
+
+.window-contentUs-contacts{
+    width: 100%;
+    height: 298px;
+    background: #fff;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    color:#7CA381;
+    font-weight: 400;
+    padding: 35px 35px;
+    
+    .window-contentUs-contacts__text{
+        font-size: 1em;
+    }
+    .window-contentUs-contacts__schedule{
+        margin: 15px 0 25px 0;
+        font-weight: 500;
+        span{
+            display: inline-block;
+            margin: 17px 0 0 0;
+            position: relative;
+            padding-left: 35px;
+            &::before{
+                content: '';
+                background: url(../icons/contactUs/clock.svg) 50% 50%/ cover no-repeat;
+                position: absolute;
+                width: 22px;
+                height: 22px;
+                left: 0px;
+            }
+        }
+    }
+    .window-contentUs-contacts__phone{
+        color:#7B897D ;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px 0 40px;
+        
+        span{
+            position: relative;
+            &::before{
+                content: '';
+                background: url(../icons/contactUs/phone.png) 50% 50%/ cover no-repeat;
+                position: absolute;
+                width: 22px;
+                height: 22px;
+                left: -35px;
+            }
+        }
+    }
+}
+.window--contactUs-button{
+    width: 50px;
+    height: 50px;
+    background: #5CCD6A;
+    border-radius: 15px;
+    position: absolute;
+    top: -75px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.14) inset;
+    transition: 0.1s all ease;
+    
+    .window--contactUs-button-body{
+        &::before{
+            content:"";
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: 0px 0px 0px 7px rgba(120, 192, 129, 0.68);
+            border-radius: 15px;
+        }
+    }
+    &:hover{
+        background: #54E165;
+    }
+    
+}
+
+.hideWindowForm{
+    display: none;
+}
+.showWindowForm{
+    display: block;
+    z-index: 7;
+}

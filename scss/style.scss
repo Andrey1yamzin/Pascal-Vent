@@ -10,6 +10,7 @@
 @import "clients.scss";
 @import "footer.scss";
 @import "windowAplication.scss";
+@import "windowContactUs.scss";
 
 
 // font-family: 'Kanit', sans-serif; |Ruberoid
@@ -26,3 +27,27 @@
     font-weight: 600;
     text-transform: capitalize;
 }
+
+
+// @media (max-width: 1200px){
+
+// }
+
+// @media (max-width: 992px){
+
+// }
+// @media (max-width: 767px){
+
+// }
+
+// @media (max-width: 480px){
+
+// }
+
+// адаптивный шрифт
+// 40px, 24px это условные шрифты
+// font-size: calc(24px + 16 * (100vw / 1280))
+// 24px это оптимальный шрифт намобильных утройствах 
+// 16px это 40px - 24px 40px это набоьших экранах
+// при разрешении ниже 767px нужно отнять 320px от 100vw и добавить 70% от 16
+// font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280))
