@@ -4,8 +4,8 @@ window.addEventListener('DOMContentLoaded', function(){
     let wrapBtn = document.querySelector('.tabs-button');
     let btn = document.querySelectorAll('.tabs-button__item');
     let tabs = document.querySelectorAll('.tabs-content');
-    
-    
+    let header = document.querySelector('.header');
+    let windowScroll;
     
     function hideTabContent(hide){
         for(let i = hide; i < tabs.length; i++){
@@ -51,4 +51,20 @@ window.addEventListener('DOMContentLoaded', function(){
                 }
             }
         })
+
+
+
+        
+window.addEventListener('scroll', function(){
+    windowScroll = window.pageYOffset;  
+    if(windowScroll >= 10){
+        header.classList.add('header_fixed');
+        header.classList.add('animate_header');
+    }
+    if(windowScroll <= 50){
+        header.classList.remove('header_fixed');
+    }
+});
     });
+
+//вынести в отельную функцию, для того что бы при загрузки ниже стр проверялось сколько px

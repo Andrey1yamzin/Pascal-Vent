@@ -12,9 +12,30 @@
     padding: 20px 45px 0 45px;
     display: flex;
     justify-content:space-between;
-    
-    
 }
+
+
+.header_fixed{
+    background: #d9fadd;
+    z-index: 9;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    transition: 1s ease all;
+    .header-contact .contact-button__wrapper .contact__button{
+        background: #5CCD6A;
+        &::after{
+            box-shadow: 0 0 0 10px #78c08236; 
+        }
+    } 
+}
+
 .header-menu{
     display: flex;
     flex-direction: column;
@@ -100,7 +121,6 @@
             position: absolute;
             top: -80px;
             right: -340px;
-            z-index: -0;
             height: 820px;
             
         }

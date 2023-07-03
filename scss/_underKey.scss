@@ -57,7 +57,6 @@
     
 }
 .galary-items{
-    padding:85px 135px 0 135px;
     display: flex;
     flex-wrap: wrap;
     padding: 85px 100px 0 100px;
@@ -66,7 +65,7 @@
 
 .galary-item {
     position: relative;
-    z-index: 9;
+    z-index: 7;
     width: 257px;
     height: 135px;
     margin: 25px 0;
