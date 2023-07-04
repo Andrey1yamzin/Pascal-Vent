@@ -1,0 +1,54 @@
+.header-menu__burger{
+    padding: 20px 20px 50px 20px;
+    flex-direction: column;
+    row-gap: 30px;
+    position: absolute;
+    right: -790px;
+    background:#D9FADD;
+    width: 300px;
+    height: auto;
+    border-radius: 30px;
+    z-index: 7;
+    display: flex;
+    // display: none;
+    opacity: 0;
+    transition: 1s all ease;
+    .header-logo{
+        width: 168px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        
+        .menu__link{
+            font-size: 1.4em;
+            padding: 15px 0 0 0;
+            text-transform: uppercase;
+            // text-align: center;
+        }
+    }
+
+
+    .header-contact{
+        .contact__button{
+            width:250px;
+            margin-right: 50px;
+            &::after{
+                width: 250px;
+            }
+        }
+    }
+}
+
+.header-burger__button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 15px 0 0;
+}
+.burger-activate{
+    display: flex;
+    opacity: 1;
+    right: 0;
+    transition: 1s all ease;
+}
