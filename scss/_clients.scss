@@ -1,5 +1,5 @@
 .clients{
-    overflow: hidden;
+   
     background: #D9FADD;
     position: relative;
     
@@ -73,6 +73,7 @@
     overflow: hidden;
     .clients--slider-content{
         width: 900px;
+        overflow: hidden;
        
     }
     .clients--slider-items{

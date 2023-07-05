@@ -355,21 +355,32 @@
 }
 // ниже на картинке поменял с 2600% на 50%
 .ventilation__img{
-    background: url(../image/services/1.png)50% 50%/cover no-repeat;
+    // background: url(../image/services/1.png)50% 50%/cover no-repeat;
     border-bottom-left-radius: 65px 65px;
     border-top-left-radius: 65px 65px;
     top: 0;
     left: 400px;
     width: 100%;
+    img{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        left: -400px;
+    }
 }
 .conditioning__img{
-    background: url(../image/services/2.png)50% 50%/cover no-repeat;
+    // background: url(../image/services/2.png)50% 50%/cover no-repeat;
     border-bottom-left-radius: 65px 65px;
     border-top-left-radius: 65px 65px;
     top: 0;
     left: 400px;
     width: 500px;
-    //уменьшить когда экран будет около 1440px
+    img{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        left: -20px;
+    }
 }
 
 .hide{
