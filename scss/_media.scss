@@ -5,9 +5,57 @@
 }
 
 @media (max-width: 1440px){
+    .header-menu{
+        .menu .menu__link{
+            
+        }
+    } 
     .clients--slider-body{
         padding-left: 250px;
     }
+
+    
+    .promo {
+        .promo-info{
+            .promo-info__title{
+                .promo-info__title-text{
+                    font-size:calc(36px + (64 - 36) * ((100vw - 320px) / (1440 - 320)));
+                }
+            }
+        }
+    } 
+    .promo{
+        .promo-info__subtitle-text{
+            .item{
+                font-size:calc(18px + (22 - 18) * ((100vw - 320px) / (1440 - 320)));
+            }
+        }
+    }  
+
+    .promo{
+        .promo-info__geo{
+            font-size:calc(14px + (16 - 14) * ((100vw - 320px) / (1440 - 320)));
+        }
+    } 
+
+    .promo {
+        .promo-info__telephone{
+            font-size:calc(14px + (16 - 14) * ((100vw - 320px) / (1440 - 320)));
+        }
+    }
+
+    .title{
+        font-size:calc(28px + (45 - 28) * ((100vw - 320px) / (1440 - 320)));
+    }
+
+    .promo{
+        .promo-info__subtitle-button{
+            width: calc(319px + (470 - 319) * ((100vw - 320px) / (1440 - 320)));
+            .subtitle-button{
+                width: calc(289px + (440 - 289) * ((100vw - 320px) / (1440 - 320)));
+            }
+        } 
+    } 
     .conditioning__img{
         border-bottom-left-radius: 65px 65px;
         border-top-left-radius: 65px 65px;
@@ -21,15 +69,77 @@
             left: -150px;
         }
     }
-}
 
+    .under-key__title{
+        width: calc(320px + (900 - 320) * ((100vw - 320px) / (1440 - 320)));
+        padding-right: 0;
+        padding-left:calc(28px + (135 - 28) * ((100vw - 320px) / (1440 - 320))); 
+        margin-left: 0;
+        margin-top: 0;
+
+    }
+
+    .services-page__body{
+        .services-page__info{
+            padding-top: calc(70px + (170 - 70) * ((100vw - 320px) / (1440 - 320)));
+            padding-left: calc(28px + (135 - 28) * ((100vw - 320px) / (1440 - 320)));
+        }
+    } 
+
+
+
+
+
+
+    .air-purification-form-wrapper{
+        padding-left:calc(28px + (135 - 28) * ((100vw - 320px) / (1440 - 320))); 
+        padding-right:calc(28px + (135 - 28) * ((100vw - 320px) / (1440 - 320))); 
+    }
+}
+@media (max-width: 1400px){
+    .tabs{
+        .tabs-button{
+            left: 50px;
+        }
+    } 
+
+    .tabs-content__plug{
+        left: 125px;
+    }
+    .tabs-content{
+        left: 120px;
+    }
+}
 @media (max-width: 1280px){
+    .header-menu{
+        .menu .menu__link{
+            margin-left:calc(10px + (20 - 10) * ((100vw - 992px) / (1280 - 992)));
+            margin-right:calc(10px + (20 - 10) * ((100vw - 992px) / (1280 - 992)));
+        }
+    } 
+    .header{
+        padding-left:calc(5px + (45 - 5) * ((100vw - 992px) / (1280 - 992)));
+        padding-right:calc(5px + (45 - 5) * ((100vw - 992px) / (1280 - 992)));
+    }
 
+
+    .air-purification-form-wrapper{
+        padding-right:calc(28px + (135 - 28) * ((100vw - 320px) / (1440 - 320))); 
+    }
 }
 
-// @media (max-width: 992px){
+@media (max-width: 992px){
+    .air-purification__form{
+        flex-direction: column;
+        align-items: center;
+    }
 
-// }
+    .air-purification-form-wrapper{
+        .input-text{
+            width: 100%;
+        }
+    }
+}
 // @media (max-width: 767px){
 
 // }
