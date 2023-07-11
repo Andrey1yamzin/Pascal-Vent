@@ -83,6 +83,7 @@
         .services-page__info{
             padding-top: calc(70px + (170 - 70) * ((100vw - 320px) / (1440 - 320)));
             padding-left: calc(28px + (135 - 28) * ((100vw - 320px) / (1440 - 320)));
+            padding-bottom: 30px;
         }
     } 
 
@@ -95,7 +96,23 @@
         padding-left:calc(28px + (135 - 28) * ((100vw - 320px) / (1440 - 320))); 
         padding-right:calc(28px + (135 - 28) * ((100vw - 320px) / (1440 - 320))); 
     }
+
+    .services-page__body {
+        .services-page__title{
+            :last-child{
+                    &::before{
+                        width: calc(130px + (245 - 130) * ((100vw - 320px) / (1440 - 320)));
+                        left: calc(115px + (160 - 115) * ((100vw - 320px) / (1440 - 320)));
+                        top:calc(20px + (35 - 20) * ((100vw - 320px) / (1440 - 320)));
+                }
+            }
+            }  
+    }
+    
 }
+
+
+
 @media (max-width: 1400px){
     .tabs{
         .tabs-button{
@@ -133,16 +150,52 @@
         flex-direction: column;
         align-items: center;
     }
+    .tabs .tabs-button{
+        transform: rotate(90deg);
+        left: calc(15px + (709 - 15) * ((100vw - 320px) / (992 - 320))); 
+        top: -183px;
+    }
+    .conditioning__img{
+        img{
+            left: 0px;
+        }
+    }
 
     .air-purification-form-wrapper{
         .input-text{
             width: 100%;
         }
     }
+    .services-page__body{
+        flex-direction: column;
+        .services-page__info{
+            width: 100%;
+          .services-page__text{
+            width: 100%;
+          }
+           
+        }
+        .services-page__example{
+            width: 100%;
+        }
+    }
 }
-// @media (max-width: 767px){
-
-// }
+@media (max-width: 767px){
+    .tabs{
+        .tabs-button{
+            height: calc(368px + (486 - 368) * ((100vw - 320px) / (767 - 320))); ;
+            .tabs-button__item{
+             width: calc(172px + (233 - 172) * ((100vw - 320px) / (767 - 320))); 
+             padding-left: 15px;
+             padding-right: 0;
+             &::before{
+                 content: none;
+             }
+            }
+         }
+    }
+    
+}
 
 // @media (max-width: 480px){
 

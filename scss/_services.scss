@@ -7,6 +7,7 @@
     max-width:1440px;
     margin: 0 auto;
     display: flex;
+    height: auto;
     .services-page__info{
         display: flex;
         flex-direction: column;
@@ -44,6 +45,7 @@
 .tabs{
     display: flex;
     width: 100%;
+    height:800px;
     position: relative;
     .tabs-button{
         position: absolute;
@@ -165,7 +167,6 @@
 }
 .tabs-content{
     width: 100%;
-    height: 655px;
     position: absolute;
     z-index: 1;
     left: 230px;
