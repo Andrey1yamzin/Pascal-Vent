@@ -181,12 +181,67 @@
     }
 }
 @media (max-width: 767px){
-    .tabs{
+
+    .services-page__example{
+        height: 1500px;
+    }
+    .tabs{  
+        height: auto;
+        .tabs-content{
+            left: 0;
+            top: 0;
+            flex-direction: column;
+            padding-top: 90px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 0;
+            width: 100%;
+            border-bottom-right-radius: 65px 65px;
+            border-top-right-radius: 65px 65px;
+            .item-text{
+                padding: 15px;
+            }
+            .tabs-content__text{
+                width: 100%;
+                padding-left: calc(80px + (100 - 80) * ((100vw - 320px) / (767 - 320)));
+                height: auto;
+                margin-bottom: 20px;
+            }
+            .tabs-content__img{
+                position: relative;
+                left: 0;
+                width: calc(290px + (738 - 290) * ((100vw - 320px) / (767 - 320)));
+                height: calc(150px + (500 - 150) * ((100vw - 320px) / (767 - 320)));
+                margin-bottom: 15px;
+                border-bottom-right-radius: 65px 65px;
+                border-top-right-radius: 65px 65px;
+                
+                img{
+                    width: 100%;
+                    left: 0;
+                }
+            } 
+        }
+        .tabs-content__plug{
+            left: 0;
+            top: 0; 
+            border-bottom-right-radius: 65px 65px;
+            border-top-right-radius: 65px 65px;
+            width: 100%;
+            height: calc(925px - (50 - 29) * ((100vw - 320px) / (767 - 375)));
+        }
         .tabs-button{
-            height: calc(368px + (486 - 368) * ((100vw - 320px) / (767 - 320))); ;
+            background: none; 
+            height:calc(316px + (400 - 316) * ((100vw - 320px) / (767 - 375)));  
+            // height: 316px;
+            top: calc(-102px + (-159 - -102) * ((100vw - 320px) / (767 - 320)));  
+            left: calc(116px + (339 - 116) * ((100vw - 320px) / (767 - 320)));     
+
             .tabs-button__item{
-             width: calc(172px + (233 - 172) * ((100vw - 320px) / (767 - 320))); 
+             width: calc(158px + (233 - 158) * ((100vw - 320px) / (767 - 320))); 
+            // width: 233px;
              padding-left: 15px;
+             font-size: 12px;
              padding-right: 0;
              &::before{
                  content: none;
@@ -194,6 +249,11 @@
             }
          }
     }
+
+
+
+
+
     
 }
 
