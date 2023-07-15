@@ -19,7 +19,7 @@
         .promo-info{
             .promo-info__title{
                 .promo-info__title-text{
-                    font-size:calc(36px + (64 - 36) * ((100vw - 320px) / (1440 - 320)));
+                    font-size:calc(36px + (64 - 36) * ((100vw - 375px) / (1440 - 375)));
                 }
             }
         }
@@ -47,8 +47,11 @@
     .title{
         font-size:calc(28px + (45 - 28) * ((100vw - 320px) / (1440 - 320)));
     }
-
+    
     .promo{
+        .promo-info__subtitle-contact{
+            padding-top: calc(30px + (50 - 30) * ((100vw - 320px) / (1440 - 767)));;
+        }
         .promo-info__subtitle-button{
             width: calc(319px + (470 - 319) * ((100vw - 320px) / (1440 - 320)));
             .subtitle-button{
@@ -114,6 +117,40 @@
 
 
 @media (max-width: 1400px){
+
+    .promo{
+        .promo-info{
+            width: calc(319px + (500 - 319) * ((100vw - 375px) / (1440 - 375))); 
+            .promo-info__title{
+                    width: 100%; 
+                 .text-end{
+                    &::before{
+                        width:calc(93px + (148 - 93) * ((100vw - 375px) / (1440 - 375)));
+                        left: calc(21px + (52 - 21) * ((100vw - 375px) / (1440 - 375)));
+                        top: calc(70px + (122 - 70) * ((100vw - 375px) / (1440 - 375)));
+                    }
+                       
+                    
+                }
+            } 
+
+          .promo-info__subtitle{
+            width: 100%;
+            .promo-info__subtitle-text{
+                &:first-child{
+                    flex-grow: 0;
+                    flex-shrink: 3;
+                }
+                &:last-child{
+                    flex-grow: 2;
+                    flex-shrink: 0;
+                }
+            }
+          }
+        } 
+    }
+
+
     .tabs{
         .tabs-button{
             left: 50px;
@@ -146,6 +183,26 @@
 }
 
 @media (max-width: 992px){
+
+    .promo{
+        padding-left:calc(40px + (135 - 40) * ((100vw - 320px) / (1440 - 320))); 
+        padding-right: calc(40px + (135 - 40) * ((100vw - 320px) / (1440 - 320))); 
+        .promo-info{
+            left: 0;
+            position: relative;
+
+            .promo-info__title {
+               
+                .promo-info__title-text{
+                    
+                }
+                .text-end{
+                    text-align: end;
+                }
+            }
+        }
+
+    }
     .air-purification__form{
         flex-direction: column;
         align-items: center;
@@ -181,7 +238,21 @@
     }
 }
 @media (max-width: 767px){
+    .promo {
+        .promo-info__subtitle-contact{
+        flex-direction: column;
+        align-items: center;
 
+        .promo-info__geo{
+            width: 100%;
+        }
+        .promo-info__telephone{
+            width: 100%;
+            display: flex;
+            column-gap: 50px;
+        }
+        }
+    }
     .services-page__example{
         height: 1500px;
     }
@@ -240,7 +311,7 @@
             .tabs-button__item{
              width: calc(158px + (233 - 158) * ((100vw - 320px) / (767 - 320))); 
             // width: 233px;
-             padding-left: 15px;
+             padding-left: calc(15px + (53 - 15) * ((100vw - 320px) / (767 - 375))); 
              font-size: 12px;
              padding-right: 0;
              &::before{
