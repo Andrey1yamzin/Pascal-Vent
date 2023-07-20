@@ -86,6 +86,7 @@
         .services-page__info{
             padding-top: calc(70px + (170 - 70) * ((100vw - 320px) / (1440 - 320)));
             padding-left: calc(28px + (135 - 28) * ((100vw - 320px) / (1440 - 320)));
+            
             padding-bottom: 30px;
         }
     } 
@@ -120,14 +121,14 @@
 
     .promo{
         .promo-info{
-            width: calc(319px + (500 - 319) * ((100vw - 375px) / (1440 - 375))); 
+            width: calc(319px + (500 - 319) * ((100vw - 375px) / (1400 - 375))); 
             .promo-info__title{
                     width: 100%; 
                  .text-end{
                     &::before{
-                        width:calc(93px + (148 - 93) * ((100vw - 375px) / (1440 - 375)));
-                        left: calc(21px + (52 - 21) * ((100vw - 375px) / (1440 - 375)));
-                        top: calc(70px + (122 - 70) * ((100vw - 375px) / (1440 - 375)));
+                        width:calc(125px + (148 - 125) * ((100vw - 992px) / (1400 - 992)));
+                        left: calc(21px + (52 - 21) * ((100vw - 375px) / (1400 - 375)));
+                        top: calc(70px + (122 - 70) * ((100vw - 375px) / (1400 - 375)));
                     }
                        
                     
@@ -172,10 +173,26 @@
         }
     } 
     .header{
-        padding-left:calc(5px + (45 - 5) * ((100vw - 992px) / (1280 - 992)));
-        padding-right:calc(5px + (45 - 5) * ((100vw - 992px) / (1280 - 992)));
+        padding-left:calc(35px + (45 - 35) * ((100vw - 992px) / (1280 - 992)));
+        padding-right:calc(35px + (45 - 35) * ((100vw - 992px) / (1280 - 992)));
+        position: fixed;
     }
 
+    
+    .header-logo{
+        width: calc(160px + (196 - 160) * ((100vw - 992px) / (1280 - 992)));
+    }
+
+    .header-contact{
+        .contact-button__wrapper{
+            .contact__button{
+                width: calc(170px + (190 - 170) * ((100vw - 992px) / (1280 - 992)));
+                &::after{
+                    width: calc(170px + (190 - 170) * ((100vw - 992px) / (1280 - 992)));  
+                }
+            }
+        } 
+    } 
 
     .air-purification-form-wrapper{
         padding-right:calc(28px + (135 - 28) * ((100vw - 320px) / (1440 - 320))); 
@@ -185,24 +202,78 @@
 @media (max-width: 992px){
 
     .promo{
-        padding-left:calc(40px + (135 - 40) * ((100vw - 320px) / (1440 - 320))); 
-        padding-right: calc(40px + (135 - 40) * ((100vw - 320px) / (1440 - 320))); 
+        padding-left:calc(0px + (135 - 0) * ((100vw - 375px) / (992 - 375))); 
+        padding-right: calc(0px + (135 - 0) * ((100vw - 375px) / (992 - 375))); 
+        flex-direction: column;
         .promo-info{
             left: 0;
             position: relative;
-
+            width: 100%;
+            margin-bottom: calc(296px + (400 - 296) * ((100vw - 375px) / (992 - 375))); 
+            
             .promo-info__title {
-               
+                padding-left: calc(20px + (145 - 20) * ((100vw - 375px) / (992 - 375))); 
+                padding-right: calc(30px + (145 - 30) * ((100vw - 375px) / (992 - 375))); 
                 .promo-info__title-text{
-                    
+
                 }
                 .text-end{
                     text-align: end;
+                    &::before{
+                        left: calc(60px + (190 - 60) * ((100vw - 375px) / (992 - 375)));
+                    }
                 }
             }
         }
 
     }
+    .promo-page{
+        height: 992px;
+        height: calc(900px + (1300 - 900) * ((100vw - 375px) / (992 - 375)));
+        background: linear-gradient(270deg,#f1f1f1 0,#f0f2f1 16.25%,#ebedec 43.26%,#e6e8e7 72.5%,#dee2e1 100%);
+        
+    }
+
+    .promo-image{
+        position: absolute;
+        top: 600px;
+        // right: 50px;
+        // left: 0;
+        right: calc(-50px + (-100 - (-50)) * ((100vw - 375px) / (992 - 375)));
+        width: calc(500px + (1200 - 500) * ((100vw - 375px) / (992 - 375)));
+        height: calc(400px + (1000 - 400) * ((100vw - 375px) / (992 - 375)));
+        img{
+            transform: rotate(90deg);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    } 
+
+    .promo{
+        .promo-info__subtitle-button{
+            width: calc(290px + (800 - 290) * ((100vw - 320px) / (992 - 320)));
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: 0 auto;
+             .subtitle-button{
+                width: 100%;
+             }
+            }
+        }
+    
+        .promo {
+            .promo-info__subtitle-contact{
+                padding-left: calc(20px + (90 - 20) * ((100vw - 375px) / (992 - 375))); 
+                padding-right: calc(30px + (90 - 30) * ((100vw - 375px) / (992 - 375))); 
+            }
+        }
+
+
+
+
+
     .air-purification__form{
         flex-direction: column;
         align-items: center;
@@ -226,6 +297,7 @@
     .services-page__body{
         flex-direction: column;
         .services-page__info{
+            padding-right: calc(28px + (30 - 28) * ((100vw - 320px) / (992 - 320)));
             width: 100%;
           .services-page__text{
             width: 100%;
@@ -242,20 +314,40 @@
         .promo-info__subtitle-contact{
         flex-direction: column;
         align-items: center;
-
+        padding-left: calc(30px + (150 - 30) * ((100vw - 320px) / (992 - 320)));
         .promo-info__geo{
             width: 100%;
+            &::before{
+                width: 20px;
+                height: 20px;
+                top: 0;
+                left: -25px;
+            }
         }
         .promo-info__telephone{
             width: 100%;
             display: flex;
-            column-gap: 50px;
+            column-gap: calc(20px + (150 - 20) * ((100vw - 320px) / (992 - 320)));
+            &::before{
+                width: 20px;
+                height: 20px;
+                top: 0;
+                left: -25px;
+            }
         }
         }
     }
+
+
+
+
+
+
+
     .services-page__example{
-        height: 1500px;
+        height: calc(1000px + (1050 - 1000) * ((100vw - 320px) / (992 - 320)));
     }
+
     .tabs{  
         height: auto;
         .tabs-content{
@@ -299,11 +391,11 @@
             border-bottom-right-radius: 65px 65px;
             border-top-right-radius: 65px 65px;
             width: 100%;
-            height: calc(925px - (50 - 29) * ((100vw - 320px) / (767 - 375)));
+            height: calc(925px - (50 - 29) * ((100vw - 375px) / (767 - 375)));
         }
         .tabs-button{
             background: none; 
-            height:calc(316px + (400 - 316) * ((100vw - 320px) / (767 - 375)));  
+            height:calc(316px + (400 - 316) * ((100vw - 375px) / (767 - 375)));  
             // height: 316px;
             top: calc(-102px + (-159 - -102) * ((100vw - 320px) / (767 - 320)));  
             left: calc(116px + (339 - 116) * ((100vw - 320px) / (767 - 320)));     
@@ -311,7 +403,7 @@
             .tabs-button__item{
              width: calc(158px + (233 - 158) * ((100vw - 320px) / (767 - 320))); 
             // width: 233px;
-             padding-left: calc(15px + (53 - 15) * ((100vw - 320px) / (767 - 375))); 
+             padding-left: calc(15px + (53 - 15) * ((100vw - 375px) / (767 - 375))); 
              font-size: 12px;
              padding-right: 0;
              &::before{
@@ -328,6 +420,22 @@
     
 }
 
-// @media (max-width: 480px){
+@media (max-width: 550px){
+    .promo{ 
+        .promo-info{
+            .promo-info__title {
+                // padding-left: 0; 
+                .promo-info__title-text{
 
-// }
+                }
+                .text-end{
+        
+                    &::before{
+
+                    }
+                }
+            }
+        }
+
+    }
+}
