@@ -76,7 +76,7 @@
     .under-key__title{
         width: calc(320px + (900 - 320) * ((100vw - 320px) / (1440 - 320)));
         padding-right: 0;
-        padding-left:calc(28px + (135 - 28) * ((100vw - 320px) / (1440 - 320))); 
+        padding-left:calc(18px + (135 - 18) * ((100vw - 375px) / (1440 - 375))); 
         margin-left: 0;
         margin-top: 0;
 
@@ -112,7 +112,14 @@
             }
             }  
     }
+
+
+    .under-key__title::after{
+        display: none;
+    }
     
+
+   
 }
 
 
@@ -164,6 +171,21 @@
     .tabs-content{
         left: 120px;
     }
+
+    .galary{
+        padding-left: calc(30px + (100 - 30) * ((100vw - 375px) / (1400 - 375)));
+        padding-right: calc(30px + (100 - 30) * ((100vw - 375px) / (1400 - 375)));
+    }
+    .galary-items{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+
+
+
+
 }
 @media (max-width: 1280px){
     .header-menu{
@@ -195,7 +217,18 @@
     } 
 
     .air-purification-form-wrapper{
-        padding-right:calc(28px + (135 - 28) * ((100vw - 320px) / (1440 - 320))); 
+        padding-right:calc(28px + (135 - 28) * ((100vw - 320px) / (1280 - 320))); 
+    }
+
+
+    .galary-items{
+        justify-content: flex-start;
+        column-gap:calc(30px + (100 - 30) * ((100vw - 375px) / (1280 - 375)));
+    }
+
+    .galary{
+        padding-left: calc(30px + (200 - 30) * ((100vw - 767px) / (1280 - 767)));
+        padding-right: calc(30px + (100 - 30) * ((100vw - 767px) / (1400 - 767)));
     }
 }
 
@@ -307,6 +340,12 @@
         .services-page__example{
             width: 100%;
         }
+    }
+
+
+
+    .under-key__title{
+        width: 100%;
     }
 }
 @media (max-width: 767px){
