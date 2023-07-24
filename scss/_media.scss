@@ -118,7 +118,13 @@
         display: none;
     }
     
-
+    .air-purification__info{
+        // padding: 100px 135px 0 135px;
+        // display: flex;
+    
+        padding-left: calc(10px + (135 - 10) * ((100vw - 375px) / (1440 - 375)));
+        padding-right: calc(10px + (135 - 10) * ((100vw - 375px) / (1440 - 375)));
+    }
    
 }
 
@@ -223,13 +229,24 @@
 
     .galary-items{
         justify-content: flex-start;
-        column-gap:calc(30px + (100 - 30) * ((100vw - 375px) / (1280 - 375)));
+        column-gap:calc(30px + (30 - 30) * ((100vw - 375px) / (1280 - 375)));
     }
 
     .galary{
         padding-left: calc(30px + (200 - 30) * ((100vw - 767px) / (1280 - 767)));
         padding-right: calc(30px + (100 - 30) * ((100vw - 767px) / (1400 - 767)));
     }
+
+    .air-purification__info{
+        flex-direction: column;
+    }
+    .air-purification_title::after{
+            right: 0;
+            top: calc(22px + (33 - 22) * ((100vw - 375px) / (1280 - 375)));
+            width: calc(62px + (100 - 62) * ((100vw - 375px) / (1280 - 375)));
+            left: calc(245px + (355 - 245) * ((100vw - 375px) / (1280 - 375)));
+    }
+    
 }
 
 @media (max-width: 992px){
@@ -346,6 +363,12 @@
 
     .under-key__title{
         width: 100%;
+    }
+
+
+    .galary-items{
+        justify-content: center;
+        
     }
 }
 @media (max-width: 767px){
