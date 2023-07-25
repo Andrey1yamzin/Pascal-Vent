@@ -148,6 +148,9 @@
    }
    .icon__implementation::after{
     left: calc(95px + (33 - 95) * ((100vw - 992px) / (1440 - 992)));
+    // left: 33px;
+    // left: 95px;
+
     width:calc(224px + (370 - 224) * ((100vw - 992px) / (1440 - 992)));
    }
 }
@@ -254,7 +257,7 @@
 
     .galary-items{
         justify-content: flex-start;
-        column-gap:calc(30px + (30 - 30) * ((100vw - 375px) / (1280 - 375)));
+        column-gap:calc(35px + (35 - 35) * ((100vw - 992px) / (1280 - 992)));
     }
 
     .galary{
@@ -395,6 +398,11 @@
         justify-content: center;
         
     }
+
+    .icon__implementation::after{
+        left: 95px;
+        
+       }
 }
 @media (max-width: 767px){
     .promo {
@@ -502,9 +510,58 @@
 
 
 
+    .air-purification__icons{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        width: 375px;
+        margin:  0 auto;
+        margin-bottom: 70px;
+    }
+    .icon__wish{
+        left: -50px;
+    }
+    .icon__application{
+        right: -50px;
+    }
+    .icon__implementation{
+        left: -50px;
+    }
 
-
+    .icon__wish::before{
+        background: url(../icons/air-purification/767/Vector1.png) 50% 50%/contain no-repeat;
+        height: 120px;
+        left: -120px;
+        left: calc(-142px + (-159 - (-142)) * ((100vw - 375px) / (767 - 375)));
+        top: -82px;
+        width: calc(180px + (205 - 180) * ((100vw - 375px) / (767 - 375)));
+        }
+    .icon__wish::after{
+        height: 120px;
+        background: url(../icons/air-purification/767/Vector2.png) 50% 50%/contain no-repeat;
+        top: 57px;
+        left: 71px;
+        left: calc(66px + (71 - 66) * ((100vw - 375px) / (767 - 375)));
+        width: calc(180px + (205 - 180) * ((100vw - 375px) / (767 - 375)));
     
+     }
+    .icon__implementation::before{
+        background: url(../icons/air-purification/767/Vector3.png) 50% 50%/contain no-repeat;
+        height: 120px;
+        right:calc(11px + (-19 - 11) * ((100vw - 375px) / (767 - 375)));
+        top: -110px;
+    }
+    .icon__implementation::after{
+        background: url(../icons/air-purification/767/Vector4.png) 50% 50%/contain no-repeat;
+        height: 120px;
+        left: 109px;
+        top: 25px;
+        width: calc(160px + (180 - 160) * ((100vw - 375px) / (767 - 375)));
+    }
+
+
+
+
 }
 
 @media (max-width: 550px){
