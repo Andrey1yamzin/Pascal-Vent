@@ -125,8 +125,33 @@
         padding-left: calc(10px + (135 - 10) * ((100vw - 375px) / (1440 - 375)));
         padding-right: calc(10px + (135 - 10) * ((100vw - 375px) / (1440 - 375)));
     }
-   
+
+
+    .air-purification__icons{
+        padding-left: calc(120px + (250 - 120) * ((100vw - 992px) / (1440 - 992)));
+        padding-right: calc(120px + (228 - 120) * ((100vw - 992px) / (1440 - 992)));
+        justify-content: space-between;
+    }
+
+    .icon__wish::before{
+        width: calc(205px + (270 - 120) * ((100vw - 992px) / (1440 - 992)));
+        left: calc(-204px + (-350 - (-204)) * ((100vw - 992px) / (1440 - 992)));
+        right: 0;
+    }
+   .icon__wish::after{
+    
+        width:calc(224px + (320 - 224) * ((100vw - 992px) / (1440 - 992)));
+    
+   }
+   .icon__implementation::before{
+    width:calc(224px + (314 - 224) * ((100vw - 992px) / (1440 - 992)));
+   }
+   .icon__implementation::after{
+    left: calc(95px + (33 - 95) * ((100vw - 992px) / (1440 - 992)));
+    width:calc(224px + (370 - 224) * ((100vw - 992px) / (1440 - 992)));
+   }
 }
+
 
 
 

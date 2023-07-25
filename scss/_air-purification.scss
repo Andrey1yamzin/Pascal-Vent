@@ -3,10 +3,14 @@
     max-width:1440px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 .air-purification__info{
     padding: 100px 135px 0 135px;
     display: flex;
+
+    // padding-left: ;
+    // padding-right: ;
 }
 .air-purification__title{
     position: relative;
