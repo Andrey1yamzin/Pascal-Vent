@@ -119,11 +119,8 @@
     }
     
     .air-purification__info{
-        // padding: 100px 135px 0 135px;
-        // display: flex;
-    
-        padding-left: calc(10px + (135 - 10) * ((100vw - 375px) / (1440 - 375)));
-        padding-right: calc(10px + (135 - 10) * ((100vw - 375px) / (1440 - 375)));
+        padding-left: calc(28px + (135 - 28) * ((100vw - 375px) / (1440 - 375)));
+        padding-right: calc(28px + (135 - 28) * ((100vw - 375px) / (1440 - 375)));
     }
 
 
@@ -217,9 +214,15 @@
 
 
 
-
-
-
+    .application-content{
+        padding-left: calc(28px + (135 - 28) * ((100vw - 375px) / (1400 - 375)));
+        padding-right: calc(28px + (135 - 28) * ((100vw - 375px) / (1400 - 375)));
+    }
+    .application-content__promo{
+        
+        padding-right: calc(20px + (95 - 20) * ((100vw - 992px) / (1400 - 992)));
+    }
+    
 }
 @media (max-width: 1280px){
     .header-menu{
@@ -268,13 +271,64 @@
     .air-purification__info{
         flex-direction: column;
     }
+    .air-purification_title{
+        margin-bottom: 30px;
+    }
     .air-purification_title::after{
             right: 0;
             top: calc(22px + (33 - 22) * ((100vw - 375px) / (1280 - 375)));
             width: calc(62px + (100 - 62) * ((100vw - 375px) / (1280 - 375)));
             left: calc(245px + (355 - 245) * ((100vw - 375px) / (1280 - 375)));
     }
-    
+    .air-purification-title{
+        padding-left: calc(28px + (135 - 28) * ((100vw - 375px) / (1280 - 375)));
+        padding-right: calc(28px + (135 - 28) * ((100vw - 375px) / (1280 - 375)));
+    }
+    .aboutus-peculiarities-wrapper {
+        .aboutus-peculiarities-card{
+            width: 100%;
+            height: auto;
+        }
+        .aboutus-peculiarities__text{
+            padding-left:calc(25px + (50 - 25) * ((100vw - 375px) / (1280 - 375)));
+            padding-right:calc(25px + (30 - 25) * ((100vw - 375px) / (1280 - 375)));
+        }
+        .aboutus-peculiarities__title{
+            padding-left: calc(25px + (50 - 25) * ((100vw - 375px) / (1280 - 375)));
+            span{
+               font-size: calc(18px + (21 - 18) * ((100vw - 375px) / (1280 - 375)));
+               
+            }
+        }
+    }
+    .aboutus__info{
+        padding-left:calc(28px + (135 - 28) * ((100vw - 375px) / (1280 - 375)));
+        padding-right:calc(28px + (135 - 28) * ((100vw - 375px) / (1280 - 375)));
+    }
+    .aboutus-experience-wrapper{
+        padding-left: 15px;
+    }
+    .application-library__container{
+        // align-items: start;
+        grid-auto-rows:minmax(50px, 250px)
+    }
+    .application-library__item{
+        width: 150px;
+    }
+    .application-library {
+        .item__2{
+            padding-top: 0;
+        }
+        .item__4{
+            padding-top: 0;
+        }
+    }
+    .application-content__promo{
+        padding-top: 70px;
+    }
+    .application-library{
+        padding-top: 70px;
+    }
 }
 
 @media (max-width: 992px){
@@ -402,6 +456,16 @@
     .icon__implementation::after{
         left: 95px;
         
+       }
+
+       .application-library{
+        display: none;
+       }
+       .application-content__button{
+        width: 100%;
+        &::after{
+            width: 100%;
+        }
        }
 }
 @media (max-width: 767px){
@@ -559,9 +623,40 @@
         width: calc(160px + (180 - 160) * ((100vw - 375px) / (767 - 375)));
     }
 
+    .air-purification__profit{
+        padding-left: 32px;
+        
+    }
+    .aboutus-peculiarities-wrapper{
+        margin-bottom: 30px;
+        .aboutus-peculiarities__title{
+            padding-right: calc(25px + (118 - 25) * ((100vw - 375px) / (767 - 375)));
+        }
+    }
+    .aboutus-wrapper{
+        flex-direction: column;
+    }
 
 
+    
 
+    .aboutus-experience-wrapper{
+        justify-content: center;
+        padding-left: 0;
+        .aboutus-experience__item{
+            width: auto;
+            margin: 0 0 30px 0;
+            .dec-bg{
+                left: auto;
+            }
+            &:nth-child(2n){
+                padding-left: calc(80px + (200 - 80) * ((100vw - 375px) / (767 - 375)));
+            }
+            &:nth-child(2n+1){
+                padding-right: calc(80px + (200 - 80) * ((100vw - 375px) / (767 - 375)));
+            }
+        }
+    }
 }
 
 @media (max-width: 550px){
