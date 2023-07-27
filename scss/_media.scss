@@ -150,6 +150,46 @@
 
     width:calc(224px + (370 - 224) * ((100vw - 992px) / (1440 - 992)));
    }
+
+
+
+
+
+   .portfolio-content{
+    padding-top: 0;
+    padding-left: calc(30px + (135 - 30) * ((100vw - 375px) / (1440 - 375)));
+    padding-right: calc(30px + (135 - 30) * ((100vw - 375px) / (1440 - 375)));
+   }
+
+   .portfolio__info{
+    column-gap: 30px;
+    height: auto;
+    .portfolio_title{
+        height: auto;
+    }
+   }
+
+   .slider-portfolio-wrapper{
+    top: 250px;
+    margin-top: 0;
+   }
+
+
+   .clients-content{
+    padding-left: calc(30px + (135 - 30) * ((100vw - 375px) / (1440 - 375)));
+    padding-right: calc(30px + (135 - 30) * ((100vw - 375px) / (1440 - 375)));
+   }
+
+   .footer_content{
+    padding-left: calc(30px + (135 - 30) * ((100vw - 375px) / (1440 - 375)));
+    padding-right: calc(30px + (135 - 30) * ((100vw - 375px) / (1440 - 375)));
+   }
+   .footer__contacts{
+    margin-left:calc(40px + (90 - 40) * ((100vw - 1280px) / (1440 - 1280))); 
+   }
+   .footer__form-wrapper{
+    padding-left:calc(50px + (90 - 50) * ((100vw - 1280px) / (1440 - 1280))); 
+   }
 }
 
 
@@ -224,6 +264,9 @@
     }
     
 }
+
+
+
 @media (max-width: 1280px){
     .header-menu{
         .menu .menu__link{
@@ -329,6 +372,16 @@
     .application-library{
         padding-top: 70px;
     }
+
+
+    
+   .slider-portfolio-wrapper{
+    top: calc(270px + (250 - 270) * ((100vw - 767px) / (1280 - 767)));
+   }
+
+   .slider-portfolio-buttons{
+    margin-top:30px;
+   }
 }
 
 @media (max-width: 992px){
@@ -555,7 +608,22 @@
             } 
            }
 
-       
+           .clients-content{
+            flex-direction: column;
+            height: 800px;
+           }
+           .clients--slider-wrapper{
+            top: 500px;
+           }
+
+           .footer{
+            height: auto;
+           }
+
+           .footer_content{
+            flex-direction: column;
+            align-items: center;
+           }
 }
 @media (max-width: 767px){
     .promo {
@@ -751,6 +819,38 @@
         margin-bottom: 30px;
         
     }
+
+
+    .portfolio__info{
+        flex-direction: column;
+        row-gap: 30px;
+         .portfolio_title{
+            width: 100%;
+         }
+        
+       }
+
+
+       .portfolio{
+        height: 960px;
+       }
+
+
+
+       .slider-portfolio-wrapper{
+        top: calc(380px + (270 - 380) * ((100vw - 375px) / (767 - 375)));
+        // left: -40px;
+       }
+       .slider-portfolio-buttons{
+        margin-top: calc(530px + (624 - 530) * ((100vw - 375px) / (767 - 375)));
+        .slider-portfolio-buttons__items{
+            justify-content: center;
+        }
+       }
+       .active-item{
+        width: calc(319px + (500 - 319) * ((100vw - 375px) / (767 - 375)));
+       }
+       
 }
 
 @media (max-width: 550px){
