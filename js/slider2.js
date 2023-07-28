@@ -14,6 +14,10 @@
     // 
     const movePositionSlidesClients = slidesClientsToScroll * itemWidthSlidesClients;
 
+    console.log(itemWidthSlidesClients);
+    console.log(containerSlidesClients.clientWidth);
+    console.log(slidesClientsToShow);
+
 
     itemsSlidesClients.forEach((item2)=>{
         item2.style.minWidth = `${itemWidthSlidesClients}px`;

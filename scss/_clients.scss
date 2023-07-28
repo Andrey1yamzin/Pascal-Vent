@@ -10,9 +10,10 @@
     &-content{
     padding: 150px 135px 100px 135px;
     display: flex;
+    column-gap: 30px;
     }
     &_info {
-        width: 100%;
+        width:50%;
         
         
     }
@@ -40,7 +41,8 @@
     }
 
     &_slider-wrapper{
-        width: 100%;
+        width: 50%;
+        position: relative;
     }
 }
 
@@ -67,12 +69,12 @@
 
 .clients--slider-wrapper{
     position:absolute;
-    width: 900px;
-    top: 200px;
+    width: 100%;
+    top: 70px;
     right: 0px;
     overflow: hidden;
     .clients--slider-content{
-        width: 900px;
+        width: 780px;
         overflow: hidden;
        
     }
@@ -88,8 +90,8 @@
         top: 0;
         right: 0;
         .cleints-sleder_item-image{
-            width: 300px;
-            height: 115px;
+            width: 260px;
+            height: 116px;
             background: #fff; 
             display: flex;
             justify-content: center;
@@ -102,6 +104,7 @@
 .clients--slider-buttons {
     position: relative;
     left: 20px;
+    
     margin-top: 46px;
     margin-bottom: 25px;
     .clients--slider-buttons__items{

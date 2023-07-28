@@ -83,7 +83,6 @@ window.addEventListener('scroll', function(){
     windowWidth = window.innerWidth; 
     if(windowScroll >= 2){
         header.classList.add('header_fixed');
-        console.log(windowWidth);
     }
     if(windowScroll <= 10 || windowWidth <= 1036){
         header.classList.remove('header_fixed');
@@ -105,8 +104,6 @@ buttonShowFormContactUs.addEventListener('click', function(){
     formContactUs.classList.remove('hideWindowForm');
     formContactUs.classList.add('showWindowForm');
     document.body.style.overflow = 'hidden';
-
-    console.log('1')
 })
 
 closedFormContactUs.addEventListener('click', function(){
