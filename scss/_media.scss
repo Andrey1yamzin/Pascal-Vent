@@ -181,19 +181,25 @@
    }
 
    .footer_content{
-    padding-left: calc(30px + (135 - 30) * ((100vw - 375px) / (1440 - 375)));
-    padding-right: calc(30px + (135 - 30) * ((100vw - 375px) / (1440 - 375)));
+    padding-left: calc(30px + (135 - 30) * ((100vw - 992px) / (1440 - 992)));
+    padding-right: calc(30px + (135 - 30) * ((100vw - 992px) / (1440 - 992)));
    }
    .footer__contacts{
-    margin-left:calc(40px + (90 - 40) * ((100vw - 1280px) / (1440 - 1280))); 
+    margin-left:calc(70px + (90 - 70) * ((100vw - 1280px) / (1440 - 1280))); 
    }
    .footer__form-wrapper{
-    padding-left:calc(50px + (90 - 50) * ((100vw - 1280px) / (1440 - 1280))); 
+    padding-left:calc(40px + (90 - 40) * ((100vw - 992px) / (1440 - 992))); 
    }
 
 
    .clients_title{
     font-size: calc(28px + (45 - 28) * ((100vw - 375px) / (1440 - 375))); 
+}
+
+
+.clients_title::after{
+    right:calc(-4px + (15 - (-4)) * ((100vw - 1280px) / (1440 - 1280))); 
+    width:calc(80px + (100 - 80) * ((100vw - 1280px) / (1440 - 1280))); 
 }
 }
 
@@ -267,7 +273,9 @@
         
         padding-right: calc(20px + (95 - 20) * ((100vw - 992px) / (1400 - 992)));
     }
-    
+    .footer{
+        height: auto;
+       }
 }
 
 
@@ -393,6 +401,16 @@
     display: none;
    }
 }
+
+
+
+   .footer__info{
+    width: 319px;
+   }
+
+   .footer_content{
+    justify-content:center;
+   }
 }
 
 @media (max-width: 992px){
@@ -621,19 +639,27 @@
 
            .clients-content{
             flex-direction: column;
-            height: 800px;
+            height: 1600px;
            }
            .clients--slider-wrapper{
             top: 500px;
            }
 
-           .footer{
-            height: auto;
-           }
+           
 
            .footer_content{
             flex-direction: column;
             align-items: center;
+           }
+
+
+           .footer__contacts{
+            margin-left: 0;
+            padding-top: 30px;
+           }
+           .footer__form-wrapper{
+            padding-left:0;
+            padding-top: 30px;
            }
 }
 @media (max-width: 767px){
