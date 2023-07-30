@@ -1,6 +1,11 @@
     
     let position2 = 0;
-    const slidesClientsToShow = 3;
+    let slidesClientsToShow = 3;
+
+    if(window.innerWidth < 900){
+         slidesClientsToShow = 1;
+    }
+    console.log(slidesClientsToShow)
     const slidesClientsToScroll = 1;
     const containerSlidesClients = document.querySelector('.clients--slider-content');
     const trackSlidesClients = document.querySelector('.clients--slider-items');
@@ -8,16 +13,14 @@
     const itemsCountSlidesClients = itemsSlidesClients.length;
     const nextButtonSlidesClients = document.querySelector('.clients--slider__next');
     const prevButtonSlidesClients = document.querySelector('.clients--slider__prev');
-    const widthFocusItemSlidesClients = 500;
+    const widthFocusItemSlidesClients = 200;
     //ширина каждого элемента
-    const itemWidthSlidesClients = containerSlidesClients.clientWidth / slidesClientsToShow;
+    const itemWidthSlidesClients = containerSlidesClients.clientWidth / itemsCountSlidesClients;
     // 
     const movePositionSlidesClients = slidesClientsToScroll * itemWidthSlidesClients;
-
-    console.log(itemWidthSlidesClients);
-    console.log(containerSlidesClients.clientWidth);
-    console.log(slidesClientsToShow);
-
+    console.log(itemWidthSlidesClients)
+    
+    console.log(slidesClientsToShow)
 
     itemsSlidesClients.forEach((item2)=>{
         item2.style.minWidth = `${itemWidthSlidesClients}px`;
@@ -38,7 +41,6 @@
         const itemsLeft = Math.abs(position2) / itemWidthSlidesClients;
         position2 += itemsLeft >= slidesClientsToScroll ? movePositionSlidesClients : itemsLeft * itemWidthSlidesClients;
         
-
         setPosition2();
         checkBtns2();
         
@@ -51,7 +53,8 @@
     };
     function checkBtns2(){
         prevButtonSlidesClients.disabled = position2 === 0;
-        nextButtonSlidesClients.disabled = position2 <= -(itemWidthSlidesClients - slidesClientsToShow) * itemWidthSlidesClients;
+        nextButtonSlidesClients.disabled = position2 <= -(itemsCountSlidesClients - slidesClientsToShow) * itemWidthSlidesClients;
+ 
 
         if(prevButtonSlidesClients.disabled === true){
             prevButtonSlidesClients.classList.add('nonactive');

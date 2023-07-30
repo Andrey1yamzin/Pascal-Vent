@@ -74,15 +74,16 @@
     right: 0px;
     overflow: hidden;
     .clients--slider-content{
-        width: 780px;
+        width: 700px;
         overflow: hidden;
        
     }
     .clients--slider-items{
         display: flex;
-        column-gap:30px;
+        column-gap:20px;
     }
     .cleints-sleder_item{
+        width: 260px;
         display: flex;
         justify-content: center;
         align-items: center;

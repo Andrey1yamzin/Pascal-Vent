@@ -26,6 +26,7 @@ let buttonShowFormContactUs = document.querySelector('.header-contact');
 let closedFormContactUs = document.querySelector('.window--contactUs-button');
 
 
+replaceSentence();
 
 
     function hideTabContent(hide){
@@ -136,10 +137,11 @@ showFormSubmitAplication2.addEventListener('click', function(){
 });
 
 
-
-
-
-
+    function replaceSentence(){
+        if(window.innerWidth <= 992){
+            document.querySelector('.clients_title').innerHTML = 'Известные клиенты';
+        }
+    }
     });
 
 //вынести в отельную функцию, для того что бы при загрузки ниже стр проверялось сколько px

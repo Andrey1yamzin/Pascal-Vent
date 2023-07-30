@@ -10,7 +10,7 @@
     const prevButton = document.querySelector('.slider-portfolio__prev');
     const widthFocusItem = 500;
     //ширина каждого элемента
-    const itemWidth = 270 / slidesToShow;
+    const itemWidth = 375 / slidesToShow;
     // 
     const movePosition = slidesToScroll * itemWidth;
     let itemFocus = 0;
@@ -36,7 +36,13 @@
         }
         setPosition();
         checkBtns();
-        
+        console.log('itemsLeft', itemsLeft)
+        console.log('itemsCount', itemsCount)
+        console.log('Math.abs(position)', Math.abs(position))
+        console.log('slidesToShow', slidesToShow)
+        console.log('itemWidth', itemWidth)
+        console.log('slidesToScroll', slidesToScroll)
+        console.log('movePosition', movePosition)
     });
     prevButton.addEventListener('click', () => {
         const itemsLeft = Math.abs(position) / itemWidth;
